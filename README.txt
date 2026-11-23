@@ -1,1 +1,0 @@
-The Youth Social Press website starter. Upload index.html to your GitHub repository and enable GitHub Pages (Settings > Pages > Deploy from branch > main > root).
