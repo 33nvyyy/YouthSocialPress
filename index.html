@@ -279,8 +279,8 @@ function topicsSec(E){
 
 function nlSec(E){
  var left=h('div',null,[h('h2',{text:'Stay informed. Subscribe to Youth Social Press.'}),h('p',{text:'Receive new reporting, investigations, political coverage and social stories directly in your inbox.'})]);
- var form=h('form',{action:'https://buttondown.com/api/emails/embed-subscribe/YOUR-BUTTONDOWN-USERNAME',method:'post',class:'embeddable-buttondown-form'});
- var email=h('input',{type:'email',name:'email',required:true,placeholder:'Enter your email address','aria-label':'Email address'});
+ var form=h('form',{action:'https://buttondown.com/api/emails/embed-subscribe/enuri',method:'post',class:'embeddable-buttondown-form'});
+ var email=h('input',{type:'email',name:'email',required:true,placeholder:'Enter your email address','aria-label':'Enter your email',autocomplete:'email'});
  form.appendChild(email);form.appendChild(h('input',{type:'hidden',name:'embed',value:'1'}));form.appendChild(h('button',{type:'submit'},['Subscribe']));
  left.appendChild(form);left.appendChild(h('div',{class:'privacy-note',text:'You can unsubscribe at any time. Subscribe to receive updates when we publish.'}));
  var e=E[0],dev=h('div',{class:'dev','aria-hidden':'true'},[h('div',{class:'scr'},[h('div',{class:'shot'},[cover(e||{id:'nl',category:'Campus'}),h('div',{class:'cap',text:e?e.title:S.site.name})])])]);
